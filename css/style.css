@@ -2,6 +2,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
 }
 html {
   font-size: 16px;
@@ -27,7 +28,9 @@ a {
 .header-navbar__list {
   list-style: none;
   display: flex;
-  column-gap: 42px;
+  gap: 42px;
+  padding: 0;
+  flex-wrap: wrap;
 }
 .header-navbar__link {
   letter-spacing: 0.1em;
@@ -36,10 +39,10 @@ a {
 .header-navbar__link.active {
   font-weight: 500;
   color: #34547a;
-  }
+}
 .header-content {
-  width: 540px;
-  }
+  max-width: 540px;
+}
 .header-content__titel {
   margin-top: 150px;
   margin-bottom: 35px;
@@ -49,12 +52,9 @@ a {
   color: #000000;
 }
 .header-content__discription {
-  line-height: 26px;
+  line-height: 25px;
   color: #727272;
   margin-bottom: 60px;
-}
-.header-content__actions{
-  
 }
 .header-content__link {
   width: 225px;
@@ -73,4 +73,97 @@ a {
   letter-spacing: 0.1em;
   padding: 1em;
   color: #ffffff;
+}
+.main {
+  background-color: #ffffff;
+}
+.about {
+  padding: 112px 0 92px;
+}
+.about__container {
+  margin: 0 auto;
+  width: 580px;
+  padding: 20px;
+}
+.about__titel {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 39px;
+}
+.about__discription {
+  line-height: 26px;
+  text-align: center;
+  color: #727272;
+}
+.experience {
+  min-height: 250px;
+  background-color: #34547a;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.container--experience {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  width: 100%;
+}
+.experience-item {
+  display: flex;
+  gap: 20px;
+}
+.experience-item__image {
+  display: block;
+}
+.experience-item__titel {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+}
+.experience-item__name {
+  line-height: 26px;
+}
+.process {
+  padding: 100px 0 100px;
+}
+.process__container {
+  max-width: 540px;
+  margin: 0 auto;
+}
+.process__titel {
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+.process__discription {
+  line-height: 26px;
+  text-align: center;
+  color: #727272;
+  margin-bottom: 50px;
+}
+.process__video {
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+footer {
+  min-height: 150px;
+  background-color: #34547a;
+  color: #ffffff;
+  padding: 50px 0 44px;
+}
+.footer__name {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.footer__copyright {
+  font-size: 13px;
+  line-height: 21px;
 }
